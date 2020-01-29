@@ -1,3 +1,293 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+/*	list-style: none; */
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	/* font-family: 'Bangers', cursive; */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+} 
+
+/* Your code starts here! */
+/* style the nvaigation bar START */
+.container{
+	width: 98%;
+	margin: auto;
+}
+.navigation {	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 30px;
+}
+.navigation .textitems{
+    width: 60%;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigation a{   
+	text-decoration: none;
+}
+
+@media(max-width: 800px) {
+
+    .navigation {
+        flex-direction: column-reverse;
+    }
+    .navigation .textitems{
+        width: 90%;
+    }
+    .logoitem {
+        margin-bottom: 20px;
+    }
+    .codesnipett{
+        display: none;
+    }
+    .first{
+        margin: 10px auto;
+    }
+
+  }
+
+@media(max-width: 500px) {
+    .navigation .textitems{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation .logoitem a{
+        padding: 20px;
+        border-bottom: 1px solid black;
+        width: 90%;
+    }
+    .navigation .textitems a{
+        padding: 20px;
+        border-bottom: 1px solid black;
+        font-size: 25;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+/* style the nvaigation bar END */
+
+/* style the first section - "innovation on demand" START */
+.first{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-transform: uppercase;
+	margin: 50px 0px;
+}
+.first button{
+	margin-top: 15px;
+	width: 120px;
+	padding: 5px;
+}
+.title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title  p{
+	font-size: 80px;
+	text-align: center;
+	font-family: 'Bangers', cursive;
+}
+/* style the first section - "innovation on demand" END */
+
+/* style the second section - "features/acout" START */
+.second{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: flex-start;	
+	border-top: 1px solid black;
+	margin-bottom: 20px;
+	padding: 20px 0;
+}
+.sectiontitle{
+	font-size: 20px;
+	margin: 20px auto;
+	text-transform: uppercase;
+    font-family: 'Bangers', cursive;
+}
+.second .sectiontext{
+	width: 95%;
+}
+@media(max-width: 500px) {
+    .second{
+        flex-direction: column;
+    }
+}
+
+/* style the second section - "features/acout" END */
+
+.middle-img{
+    margin: 20px auto;
+    width: 98%;
+}
+
+/* style the third section - "services/product/vision" START */
+.third{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;	
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+.third .sectiontext{
+	width: 95%;
+}
+@media(max-width: 500px) {
+    .third{
+        flex-direction: column;
+    }
+}
+/* style the third section - "services/product/vision" END */
+
+
+
+/*Services page CSS */
+.services-header-img{
+	margin: 20px auto;
+}
+
+.service-title{
+	border-bottom: 1px solid black;
+}
+.service-title p {
+	margin-bottom: 30px;
+}
+.service-title h1{
+	font-size: 30px;
+}
+
+.middle-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0px;
+
+}
+.middle-section .service-box{
+	width: 43%;
+	border: 1px solid black;
+	background-color: #f6f6f6;
+	padding: 20px;
+	margin: 20px 0px;
+}
+
+.middle-section .service-box .section-button{
+    border: 1px solid black;
+    padding: 8px ;
+    margin-top: 20px;
+    width: 110px;
+	border-radius: 8px;
+	background-color: WhiteSmoke;
+	text-align: center;
+}
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	align-items: flex-start;
+	margin: 10px 0px;
+}
+
+.about .abouttext{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 45%;
+	padding: 10px;
+	margin: 20px 0px;
+}
+.about .abouttext ul{
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+
+.about img{
+	margin: 20px 0px;
+}
+.contact-section {
+	border-top: 1px solid black;
+	padding: 20px 0;
+}
+
+address{
+	line-height: 1;
+}
+
+footer{
+	text-align: center;
+	margin-top: 30px;
+}
