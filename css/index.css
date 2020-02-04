@@ -117,18 +117,26 @@ h1, h2, h3, h4, h5 {
         display: flex;
         flex-direction: column;
     }
-    .navigation .logoitem a{
+    /* .navigation .logoitem a{
         padding: 20px;
         border-bottom: 1px solid black;
         width: 90%;
-    }
+    } */
     .navigation .textitems a{
         padding: 20px;
         border-bottom: 1px solid black;
         font-size: 25;
         text-align: center;
         width: 90%;
+	}
+	.fristnav{
+        border-top: 1px solid black;
     }
+
+    /* .navigation .textitems .firstnav{
+        border-top: 1px solid black;
+        width: 90%;
+    } */
 }
 
 /* style the nvaigation bar END */
